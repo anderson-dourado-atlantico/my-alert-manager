@@ -8,7 +8,7 @@ import { InMemoryRepository } from './in-memory.repository'
 
 export abstract class InMemorySearchRepository<E extends Entity>
   extends InMemoryRepository<E>
-  implements SearchRepositoryInterface<E, SearchParams, SearchResult<E>>
+  implements SearchRepositoryInterface<E, any, any>
 {
   sortableFields: string[] = []
 

@@ -304,7 +304,7 @@ describe('InMemoryRepository unit tests', () => {
       )
 
       params = await sut.search(
-        new SearchParams({
+        new SearchParams<string>({
           page: 2,
           perPage: 2,
           sort: 'name',
